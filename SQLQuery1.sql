@@ -20,3 +20,6 @@ Insert into Employee_Payroll(Name,Salary,StartDate)values('Bruce',22000,'2022-10
 Insert into Employee_Payroll(Name,Salary,StartDate)values('Arvind',31000,'2022-10-8');
 Insert into Employee_Payroll(Name,Salary,StartDate)values('Chris',32000,'2022-10-8');
 Insert into Employee_Payroll(Name,Salary,StartDate)values('Jay',40000,'2022-10-8');
+
+--UC4_RetrieveAllData
+select * from Employee_Payroll;

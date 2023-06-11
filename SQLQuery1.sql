@@ -46,3 +46,17 @@ Select Gender,Avg(Salary) from Employee_Payroll group by Gender;
 Select MIN(Salary) from Employee_Payroll where Gender='M';
 Select MAX(Salary) from Employee_Payroll where Gender='M';
 Select Count(*) from Employee_Payroll group by Gender;
+
+--UC8_AddPhoneAddressAndDepartment
+Alter table Employee_Payroll Add Phone Varchar(10),
+Address Varchar(100) Default 'N/A',
+Department Varchar(20);
+
+Update Employee_Payroll set Phone='6523123674',Address='Mumbai',Department='Technical' where Name='Mukul';
+Update Employee_Payroll set Phone='6523123675',Address='Mumbai',Department='Technical' where Name='Steve';
+Update Employee_Payroll set Phone='6523123676',Address='Mumbai',Department='Technical' where Name='Vansh';
+Update Employee_Payroll set Phone='6523123674',Address='Mumbai',Department='Technical' where Name='Dev';
+Update Employee_Payroll set Phone='6523123678',Address='Mumbai',Department='Technical' where Name='Bruce';
+Update Employee_Payroll set Phone='6523123673',Address='Mumbai',Department='Technical' where Name='Arvind';
+Update Employee_Payroll set Phone='6523123670',Address='Mumbai',Department='Technical' where Name='Chris';
+Update Employee_Payroll set Phone='6523123671',Address='Mumbai',Department='Technical' where Name='Jay';

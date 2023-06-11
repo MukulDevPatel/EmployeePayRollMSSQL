@@ -26,4 +26,4 @@ select * from Employee_Payroll;
 
 --UC5_RetrieveSalary
 select salary from Employee_Payroll WHERE Name = 'Chris';
-select * from Employee_Payroll where StartDate between CAST('2022-06-03'as Date) and CURRENT_TIMESTAMP;
+select * from Employee_Payroll where StartDate between CAST('2018-01-01'as Date) and CURRENT_TIMESTAMP;

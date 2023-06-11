@@ -27,3 +27,15 @@ select * from Employee_Payroll;
 --UC5_RetrieveSalary
 select salary from Employee_Payroll WHERE Name = 'Chris';
 select * from Employee_Payroll where StartDate between CAST('2018-01-01'as Date) and CURRENT_TIMESTAMP;
+
+--UC6_AddGenderInParollService
+Alter table Employee_Payroll Add Gender Varchar(1);
+
+Update Employee_Payroll set Gender='M' where Name='Mukul';
+Update Employee_Payroll set Gender='M' where Name='Steve';
+Update Employee_Payroll set Gender='M' where Name='Vansh';
+Update Employee_Payroll set Gender='M' where Name='Dev';
+Update Employee_Payroll set Gender='M' where Name='Bruce';
+Update Employee_Payroll set Gender='M' where Name='Arvind';
+Update Employee_Payroll set Gender='M' where Name='Chris';
+Update Employee_Payroll set Gender='M' where Name='Jay';

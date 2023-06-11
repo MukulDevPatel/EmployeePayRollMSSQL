@@ -39,3 +39,10 @@ Update Employee_Payroll set Gender='M' where Name='Bruce';
 Update Employee_Payroll set Gender='M' where Name='Arvind';
 Update Employee_Payroll set Gender='M' where Name='Chris';
 Update Employee_Payroll set Gender='M' where Name='Jay';
+
+--UC7_FindAvgMinMaxCountAndNumOfEmployeeByGender
+Select SUM(Salary) from Employee_Payroll where Gender='M' group by Gender;
+Select Gender,Avg(Salary) from Employee_Payroll group by Gender;
+Select MIN(Salary) from Employee_Payroll where Gender='M';
+Select MAX(Salary) from Employee_Payroll where Gender='M';
+Select Count(*) from Employee_Payroll group by Gender;

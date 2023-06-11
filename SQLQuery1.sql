@@ -60,3 +60,19 @@ Update Employee_Payroll set Phone='6523123678',Address='Mumbai',Department='Tech
 Update Employee_Payroll set Phone='6523123673',Address='Mumbai',Department='Technical' where Name='Arvind';
 Update Employee_Payroll set Phone='6523123670',Address='Mumbai',Department='Technical' where Name='Chris';
 Update Employee_Payroll set Phone='6523123671',Address='Mumbai',Department='Technical' where Name='Jay';
+
+--UC9_AddAnotherColumn
+Alter table Employee_Payroll Add BasicPay Bigint,
+Deduction Bigint,
+TaxablePay Bigint,
+IncomeTax Bigint,
+NetPay Bigint;
+
+Update Employee_Payroll set BasicPay='20000',Deduction='2000',TaxablePay='200',IncomeTax='200',NetPay='18000' where Name='Mukul';
+Update Employee_Payroll set BasicPay='30000',Deduction='3000',TaxablePay='300',IncomeTax='300',NetPay='27000' where Name='Steve';
+Update Employee_Payroll set BasicPay='20000',Deduction='2000',TaxablePay='200',IncomeTax='200',NetPay='18000' where Name='Vansh';
+Update Employee_Payroll set BasicPay='21000',Deduction='2100',TaxablePay='210',IncomeTax='210',NetPay='18900' where Name='Dev';
+Update Employee_Payroll set BasicPay='22000',Deduction='2200',TaxablePay='220',IncomeTax='220',NetPay='18800' where Name='Bruce';
+Update Employee_Payroll set BasicPay='31000',Deduction='3100',TaxablePay='310',IncomeTax='310',NetPay='28000' where Name='Arvind';
+Update Employee_Payroll set BasicPay='32000',Deduction='3200',TaxablePay='320',IncomeTax='320',NetPay='29000' where Name='Chris';
+Update Employee_Payroll set BasicPay='40000',Deduction='4000',TaxablePay='400',IncomeTax='400',NetPay='36200' where Name='Jay';

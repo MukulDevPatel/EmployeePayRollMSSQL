@@ -76,3 +76,6 @@ Update Employee_Payroll set BasicPay='22000',Deduction='2200',TaxablePay='220',I
 Update Employee_Payroll set BasicPay='31000',Deduction='3100',TaxablePay='310',IncomeTax='310',NetPay='28000' where Name='Arvind';
 Update Employee_Payroll set BasicPay='32000',Deduction='3200',TaxablePay='320',IncomeTax='320',NetPay='29000' where Name='Chris';
 Update Employee_Payroll set BasicPay='40000',Deduction='4000',TaxablePay='400',IncomeTax='400',NetPay='36200' where Name='Jay';
+
+--UC10_SalesAndMarketing
+Update Employee_Payroll set Department='Sales and Marketing' where Name='Jay';
